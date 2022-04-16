@@ -37,7 +37,7 @@ const requestListener = async (req: http.IncomingMessage, res: http.ServerRespon
         }
         return;
     }
-    if (req.url?.startsWith("/")) {
+    if (req.url?.startsWith("/todo/")) {
         const id = req.url.split("/").pop();
         switch (req.method) {
             case "PATCH":

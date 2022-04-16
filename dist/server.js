@@ -112,7 +112,7 @@ var requestListener = function (req, res) { return __awaiter(void 0, void 0, voi
                 return [3 /*break*/, 10];
             case 10: return [2 /*return*/];
             case 11:
-                if (!((_c = req.url) === null || _c === void 0 ? void 0 : _c.startsWith("/"))) return [3 /*break*/, 20];
+                if (!((_c = req.url) === null || _c === void 0 ? void 0 : _c.startsWith("/todo/"))) return [3 /*break*/, 20];
                 id = req.url.split("/").pop();
                 _b = req.method;
                 switch (_b) {
