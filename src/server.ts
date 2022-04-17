@@ -8,6 +8,7 @@ const requestListener = async (req: http.IncomingMessage, res: http.ServerRespon
     if (req.method === "OPTIONS") {
         res.writeHead(200, headers);
         res.end();
+        return;
     }
 
     let body = "";

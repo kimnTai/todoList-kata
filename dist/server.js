@@ -72,6 +72,7 @@ var requestListener = function (req, res) { return __awaiter(void 0, void 0, voi
                 if (req.method === "OPTIONS") {
                     res.writeHead(200, headers_1.default);
                     res.end();
+                    return [2 /*return*/];
                 }
                 body = "";
                 req.on("data", function (chunk) { return (body += chunk); });
